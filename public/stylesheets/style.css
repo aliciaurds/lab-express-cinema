@@ -3,6 +3,65 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.background-image {
+  background-image: url(../images/cinema.jpg);
+  background-size: cover;
+}
+/*Index*/
+
+.title-homePage {
+  position: absolute;
+  margin-left: 850px;
+  margin-top: 80px;
+  font-size: 120px;
+
+  color: white;
+}
+.homePageBtn {
+  position: absolute;
+  margin-left: 850px;
+  margin-top: 380px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: none;
+  padding: 12px 24px 12px 24px;
+}
+
+.homePageBtn a {
+  color: #00b7ff;
+  text-decoration: none;
+}
+/*Movies*/
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-card {
+  text-align: center;
+  margin: 10px 50px;
+  padding: 40px;
+}
+.movie-title {
+  font-weight: bold;
+}
+.movie-card a {
+  color: #00b7ff;
+}
+.movie-card img {
+  width: 100%;
+  max-width: 200px; /* Set a maximum width for the images */
+}
+/*Movies details*/
+.movie-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*separo la img del texrto*/
+}
+.movie-info{
+  padding: 50px;
+}
+.goBack a {
+  color: #00b7ff;
 }

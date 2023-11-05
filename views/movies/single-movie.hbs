@@ -1,0 +1,27 @@
+<div class="movie-details">
+
+<img src="{{this.oneMovie.image}}" alt="movie" width="300px">
+<div class="movie-info">
+    <p class="goBack"><a href="/movies/">Go back</a></p>
+    <h2>{{this.oneMovie.title}}</h2>
+    <h3>Director: {{this.oneMovie.director}}</h3>
+    <h4>Stars</h4>
+    <ul>
+        {{#each this.oneMovie.stars}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <p>{{this.oneMovie.description}}</p>
+
+   {{#each this.oneMovie.showtimes}}
+     {{this}} {{!-- Muestra todos los elementos del array --}}
+     
+    {{#unless @last}}    
+      | 
+    {{/unless}}
+     {{!-- ?conditional statement que comprueba si el elemento actual no es el ultimo del array. Entonces si no es el último => "|" esto separará los elementos de showtimes --}}
+   {{/each}}
+</div>
+</div>
+
+
